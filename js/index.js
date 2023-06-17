@@ -35,7 +35,6 @@ inputSuhuEl.addEventListener("keyup", function(event) {
 //
 // Action
 //
-
 function caraKalkulasi() {
   const formatKalkulasi = `
 1. Fahrenheit = (9 / 5) * ${inputSuhuValue}°C + 32 = ${konversiKeFahrenheit(
@@ -57,6 +56,9 @@ function konversikan() {
     inputKelvinEl.value = konversiKeKelvin(inputSuhuValue);
     inputReamureEl.value = konversiKeReamur(inputSuhuValue);
     caraKalkulasi();
+  } else {
+    errorEl.style.display = "block";
+    errorEl.innerText = "* Tidak bisa melakukan konversi";
   }
 }
 
