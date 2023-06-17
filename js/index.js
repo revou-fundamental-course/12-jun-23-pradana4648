@@ -67,6 +67,7 @@ function reset() {
   inputSuhuEl.value = "";
   inputKelvinEl.value = "";
   inputReamureEl.value = "";
+  caraKalkulasiEl.value = "";
 }
 
 function konversiKeFahrenheit(input = 0) {
