@@ -1,0 +1,76 @@
+/* Change default configuration */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 1280px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px dashed black;
+  outline: none;
+  resize: none;
+}
+
+textarea:disabled {
+  background-color: lightgray;
+}
+
+button {
+  all: unset;
+  padding: 10px;
+  gap: 5px;
+  border: 1px dashed black;
+}
+
+button:active {
+  transform: skewY(10deg);
+  overflow: auto;
+}
+
+/* Custom CSS */
+.container {
+  width: calc(1280px - 50%);
+  /* background-color: red; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container-dalam {
+  border: 1px dashed black;
+  padding: 2em;
+}
+
+#results {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  gap: 10px;
+}
+
+#cara-kalkulasi:disabled {
+  background-color: white;
+}
+
+#buttons {
+  margin: 1em 0;
+}
+
+#header {
+  text-align: center;
+}
+
+#intro {
+  margin: 1em auto;
+}
+
+/* Set default to none if not error */
+#pesan-error {
+  color: red;
+  display: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mini Project Konversi Suhu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container-dalam">
+        <div id="header">
+          <h1>Selamat datang di Mini Project ini</h1>
+          <p>
+            Berisi sebuah aplikasi web sederhana untuk melakukan Konversi suhu
+          </p>
+        </div>
+        <div>
+          <h4 id="intro">Silahkan masukkan suhu yang diinginkan</h4>
+          <h5>Celcius °C</h5>
+          <textarea id="input-suhu" rows="3" name="suhu"></textarea>
+          <p id="pesan-error"></p>
+        </div>
+        <div id="buttons">
+          <button onclick="konversikan()" type="button">Konversi</button>
+          <button onclick="reset()" type="button">Reset</button>
+          <!-- <button type="button">Reverse</button> -->
+        </div>
+        <div id="results">
+          <div>
+            <h5>Fahrenheit °F</h5>
+            <textarea
+              id="input-fahrenheit"
+              rows="3"
+              name="fahrenheit"
+              disabled
+            ></textarea>
+          </div>
+
+          <div>
+            <h5>Kelvin °K</h5>
+            <textarea
+              id="input-kelvin"
+              rows="3"
+              name="kelvin"
+              disabled
+            ></textarea>
+          </div>
+
+          <div>
+            <h5>Reamur °R</h5>
+            <textarea
+              id="input-reamur"
+              rows="3"
+              name="reamur"
+              disabled
+            ></textarea>
+          </div>
+        </div>
+        <div>
+          <h5>Cara Kalkulasi</h5>
+          <textarea
+            id="cara-kalkulasi"
+            rows="6"
+            name="cara-kalkulasi"
+            disabled
+          ></textarea>
+        </div>
+      </div>
+      <small
+        >* Credit goes to
+        <a target="_blank" href="https://github.com/pradana4648"
+          >Danar Putra</a
+        ></small
+      >
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
